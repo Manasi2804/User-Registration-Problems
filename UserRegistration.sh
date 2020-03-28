@@ -53,7 +53,7 @@ function validatePassword()
 	patternForPassword="^.{8}$"
 	patternForPassword2="[A-Z]{1,}"
 	patternForPassword3="[0-9]{1,}"
-	if [[ $password =~ $patternForPassword2 ]]
+	if [[ $password =~ $patternForPassword3]]
 	then
 		echo Valid
 	else
