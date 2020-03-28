@@ -51,7 +51,8 @@ function validatePassword()
 {
 	read -p "Enter your password:" password
 	patternForPassword="^.{8}$"
-	if [[ $password =~ $patternForPassword ]]
+	patternForPassword2="[A-Z]{1,}"
+	if [[ $password =~ $patternForPassword2 ]]
 	then
 		echo Valid
 	else
